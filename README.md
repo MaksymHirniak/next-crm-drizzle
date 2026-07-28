@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full-Stack CRM Dashboard 📊
 
-## Getting Started
+A robust, end-to-end CRM dashboard demonstrating modern full-stack web development. It features secure data handling, server-side pagination, and complex database relationships.
 
-First, run the development server:
+## 🚀 Tech Stack
+- **Framework:** Next.js (App Router & Server Actions)
+- **Database:** Serverless PostgreSQL (Neon)
+- **ORM:** Drizzle ORM
+- **Styling:** Tailwind CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 Core Features
+- Server-side data fetching and pagination for maximum performance.
+- Secure database mutations using Next.js Server Actions.
+- "Soft delete" implementation and complex state management.
+- Type-safe database schema managed by Drizzle ORM.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ How to run locally
+1. Clone the repository:
+   `git clone <your-repo-url>`
+2. Install dependencies:
+   `npm install`
+3. Create a `.env.local` file and add your PostgreSQL connection string:
+   `DATABASE_URL=your_postgres_url_here`
+4. Push the schema to your database:
+   `npm run db:push` *(or your specific Drizzle script)*
+5. Run the development server:
+   `npm run dev`
